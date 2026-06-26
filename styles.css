@@ -60,6 +60,10 @@ img {
   background: var(--bg-cream);
 }
 
+.section-white {
+  background: #ffffff;
+}
+
 .section-sand {
   background: var(--bg-sand);
 }
@@ -234,10 +238,21 @@ img {
   bottom: 8vh;
 }
 
-.hero-content {
+.hero-grid {
   position: relative;
   z-index: 2;
-  padding-bottom: 6.5rem;
+  padding: clamp(6rem, 20vh, 9rem) 0 5.5rem;
+  display: grid;
+  grid-template-columns: minmax(0, 1.15fr) minmax(300px, 0.85fr);
+  gap: 2.5rem;
+}
+
+.hero-copy {
+  background: rgba(9, 23, 34, 0.6);
+  border-radius: 20px;
+  padding: 2.2rem;
+  backdrop-filter: blur(6px);
+  border: 1px solid rgba(255, 255, 255, 0.14);
 }
 
 .hero-kicker {
@@ -275,6 +290,48 @@ img {
   display: flex;
   flex-wrap: wrap;
   gap: 0.8rem;
+}
+
+.hero-panel {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 22px;
+  padding: 2rem;
+  border: 1px solid rgba(222, 229, 236, 0.32);
+  backdrop-filter: blur(4px);
+}
+
+.hero-panel-title {
+  font-size: 0.78rem;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+  color: #c9d6df;
+}
+
+.hero-metrics {
+  list-style: none;
+  display: grid;
+  gap: 0.9rem;
+  margin-bottom: 1.1rem;
+}
+
+.hero-metrics li span {
+  display: block;
+  font-size: 1.85rem;
+  font-weight: 800;
+  color: #f5f7fa;
+}
+
+.hero-metrics li small {
+  color: rgba(245, 247, 250, 0.7);
+  font-size: 0.85rem;
+}
+
+.hero-panel-note {
+  font-size: 0.9rem;
+  color: rgba(245, 247, 250, 0.72);
+  line-height: 1.5;
 }
 
 /* Buttons */
@@ -340,6 +397,32 @@ img {
   font-size: 0.93rem;
 }
 
+/* Methodology */
+.method-grid {
+  margin-top: 2rem;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+}
+
+.method-card {
+  border: 1px solid rgba(16, 42, 60, 0.12);
+  border-radius: 18px;
+  padding: 1.5rem;
+  background: #fdfdfd;
+  min-height: 220px;
+}
+
+.method-card h3 {
+  font-size: 1rem;
+  margin-bottom: 0.6rem;
+}
+
+.method-card p {
+  font-size: 0.93rem;
+  color: var(--text-soft);
+}
+
 /* Expertise */
 .expertise-grid {
   margin-top: 1.4rem;
@@ -398,7 +481,7 @@ img {
   overflow: hidden;
   border-radius: var(--radius);
   border: 1px solid rgba(214, 239, 231, 0.26);
-  background: rgba(255, 255, 255, 0.06);
+  background: rgba(255, 255, 255, 0.08);
 }
 
 .project-card img {
@@ -427,6 +510,19 @@ img {
 
 .project-copy p {
   color: rgba(228, 241, 236, 0.9);
+}
+
+.project-meta {
+  list-style: none;
+  margin-top: 0.8rem;
+  display: grid;
+  gap: 0.25rem;
+  color: rgba(216, 231, 226, 0.85);
+  font-size: 0.82rem;
+}
+
+.project-meta strong {
+  font-weight: 700;
 }
 
 /* Awards */
@@ -567,20 +663,29 @@ img {
     grid-template-columns: repeat(2, 1fr);
   }
 
+  .method-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
   .contact-shell {
     grid-template-columns: 1fr;
   }
 }
 
 @media (max-width: 760px) {
-  .hero-content {
-    padding-bottom: 4.7rem;
+  .hero-grid {
+    grid-template-columns: 1fr;
+    padding-top: 7rem;
   }
 
   .project-grid,
   .split,
   .awards-list,
   .expertise-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .method-grid {
     grid-template-columns: 1fr;
   }
 
