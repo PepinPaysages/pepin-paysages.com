@@ -1,0 +1,34 @@
+ExifTool Version Number         : 13.55
+File Name                       : ActualbillDownload-18Jun copy.pdf
+Directory                       : /Users/vinyll/Downloads
+File Size                       : 538 kB
+File Modification Date/Time     : 2026:06:23 10:23:46+02:00
+File Access Date/Time           : 2026:06:23 10:25:03+02:00
+File Inode Change Date/Time     : 2026:06:23 10:24:24+02:00
+File Permissions                : -rw-------
+File Type                       : PDF
+File Type Extension             : pdf
+MIME Type                       : application/pdf
+PDF Version                     : 1.6
+Linearized                      : No
+Create Date                     : 2026061814485+04'00'
+Creation Date--Text             : D:2026061814485+04'00'
+Creator                         : Adobe LiveCycle Designer 11.0
+Modify Date                     : 2026:06:23 10:23:46+02:00
+Mod Date--Text                  : D:2026061814485+04'00'
+Tagged PDF                      : Yes
+XMP Toolkit                     : Adobe XMP Core 5.6-c016 79.f040f5d, 2022/03/31-11:08:48
+Metadata Date                   : 2026:06:18 14:48:51+04:00
+Creator Tool                    : Adobe LiveCycle Designer 11.0
+Producer                        : Adobe XML Form Module Library
+Document ID                     : uuid:711954d4-d78b-4d8a-9521-ba66b8e2fcb9
+Instance ID                     : uuid:5e4d7859-1dd2-11b2-0a00-ff0a0000000
+Part                            : 1
+Format                          : application/pdf
+Version                         : 8.01.4329.1.616512.510114
+Version Ref                     : /template/subform[1]
+Schema Annotation               : General Flag
+Schema Annotation Ref           : /template/subform[1]/subform[1]/subform[2]/subform[1]/subform[1]/field[1]
+Embedded Href                   : C:\Users\suneer.mohamed\Desktop\Dirham Symbol\Dirham Symbol SVGs\Inflation.svg
+Embedded Href Ref               : /template/subform[1]/subform[1]/subform[2]/subform[2]/subform[1]/subform[1]/subform[1]/subform[2]/subform[4]/field[1]
+Page Count                      : 3
