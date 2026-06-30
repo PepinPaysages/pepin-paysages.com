@@ -79,7 +79,7 @@
       var heroProgress = 1 - (heroRect.bottom / vh); // 0=en haut, 1=passé
       heroProgress = Math.max(0, Math.min(1, heroProgress));
       var sat = 1.15 - heroProgress * 0.85; // 1.15 → 0.30
-      var bright = 0.55 + heroProgress * 0.08; // 0.55 → 0.63 (éclaircit un peu)
+      var bright = 0.72 + heroProgress * 0.06; // 0.72 → 0.78
       heroFig.style.filter = 'saturate(' + sat.toFixed(2) + ') contrast(1.02) brightness(' + bright.toFixed(2) + ')';
     }
 
@@ -91,7 +91,7 @@
         var festProgress = 1 - (festRect.bottom / vh);
         festProgress = Math.max(0, Math.min(1, festProgress));
         var fSat = 1.1 - festProgress * 0.8;
-        var fBright = 0.5 + festProgress * 0.08;
+        var fBright = 0.72 + festProgress * 0.06;
         festFig.style.filter = 'saturate(' + fSat.toFixed(2) + ') contrast(1.02) brightness(' + fBright.toFixed(2) + ')';
       }
     }
