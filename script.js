@@ -8,6 +8,17 @@
   var yearEl = doc.getElementById('year');
   if(yearEl) yearEl.textContent = '' + (new Date()).getFullYear();
 
+  /* --- Reading progress bar --- */
+  var progressBar = doc.getElementById('progressBar');
+  if(progressBar){
+    win.addEventListener('scroll', function(){
+      var scrollTop = win.scrollY || doc.documentElement.scrollTop;
+      var docHeight = doc.documentElement.scrollHeight - win.innerHeight;
+      var progress = docHeight > 0 ? (scrollTop / docHeight) * 100 : 0;
+      progressBar.style.width = progress + '%';
+    }, {passive: true});
+  }
+
   /* --- Mobile menu --- */
   var menuBtn = doc.getElementById('menuBtn');
   var navLinks = doc.getElementById('navLinks');
@@ -24,12 +35,12 @@
     });
   }
 
-  /* --- Scroll reveal --- */
+  /* --- Scroll reveal (two classes) --- */
   var revealed = new Set();
-  var reveals = doc.querySelectorAll('.reveal');
+  var revealTargets = doc.querySelectorAll('.reveal, .reveal-scale');
   function checkReveals(){
     var h = win.innerHeight;
-    reveals.forEach(function(el){
+    revealTargets.forEach(function(el){
       var rect = el.getBoundingClientRect();
       if(rect.top < h * 0.88 && rect.bottom > 0){
         if(!revealed.has(el)){
@@ -43,13 +54,26 @@
   win.addEventListener('scroll', checkReveals, {passive: true});
   win.addEventListener('resize', checkReveals, {passive: true});
 
+  /* --- Parallax doux sur hero --- */
+  var heroFig = doc.querySelector('.hero-fig');
+  if(heroFig){
+    win.addEventListener('scroll', function(){
+      var scrollY = win.scrollY || doc.documentElement.scrollTop;
+      var offset = scrollY * 0.25;
+      if(offset < 200){
+        heroFig.style.transform = 'translateY(' + offset + 'px)';
+      }
+    }, {passive: true});
+  }
+
   /* --- Active nav link --- */
   var sections = doc.querySelectorAll('.sec');
   var navLinkEls = doc.querySelectorAll('.nav-link');
   if(sections.length && navLinkEls.length){
-    var sectionMap = {};
-    sections.forEach(function(s){
-      if(s.id) sectionMap[s.id] = s;
+    var linkMap = new Map();
+    navLinkEls.forEach(function(link){
+      var href = (link.getAttribute('href') || '').replace('#','');
+      if(href) linkMap.set(href, link);
     });
     var observer = new IntersectionObserver(function(entries){
       entries.forEach(function(entry){
@@ -62,8 +86,8 @@
         }
       });
     }, {threshold: 0.35});
-    Object.keys(sectionMap).forEach(function(id){
-      observer.observe(sectionMap[id]);
+    doc.querySelectorAll('.sec[id]').forEach(function(s){
+      observer.observe(s);
     });
   }
 
