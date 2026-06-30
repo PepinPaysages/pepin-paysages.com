@@ -3,12 +3,12 @@
    ============================================ */
 
 :root {
-  --ink: #1e3a1a;
-  --ink-soft: #2a4a22;
-  --ink-light: #3d602e;
-  --mineral: #3d7a30;
-  --mineral-light: #4e9138;
-  --mineral-pale: rgba(61,122,48,0.08);
+  --ink: #1a3a1a;
+  --ink-soft: #244a24;
+  --ink-light: #3d6030;
+  --mineral: #428a30;
+  --mineral-light: #56a140;
+  --mineral-pale: rgba(66,138,48,0.10);
   --sand: #c49b63;
   --sand-light: #d6ad78;
   --sand-pale: rgba(196,155,99,0.12);
