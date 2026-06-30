@@ -23,7 +23,6 @@
   --radius: 16px;
   --radius-lg: 24px;
   --font-body: "Manrope", "Segoe UI", sans-serif;
-  --font-display: "Fraunces", Georgia, serif;
   --nav-h: 64px;
   --max-w: 1200px;
 }
@@ -64,7 +63,7 @@ ul, ol { list-style: none; }
 }
 
 .sec-title {
-  font-family: var(--font-display);
+  font-family: var(--font-body);
   font-size: clamp(1.8rem, 4vw, 3.2rem);
   line-height: 1.08;
   letter-spacing: -0.02em;
@@ -298,7 +297,7 @@ ul, ol { list-style: none; }
 }
 
 .hero-title {
-  font-family: var(--font-display);
+  font-family: var(--font-body);
   font-size: clamp(2.2rem, 6vw, 4.5rem);
   line-height: 1.02;
   letter-spacing: -0.03em;
@@ -335,7 +334,7 @@ ul, ol { list-style: none; }
 }
 
 .kpi-num {
-  font-family: var(--font-display);
+  font-family: var(--font-body);
   font-size: 2rem;
   font-weight: 700;
   letter-spacing: -0.02em;
@@ -403,7 +402,7 @@ ul, ol { list-style: none; }
 }
 
 .project-name {
-  font-family: var(--font-display);
+  font-family: var(--font-body);
   font-size: 1.35rem;
   line-height: 1.1;
   margin-bottom: 0.2rem;
@@ -476,7 +475,7 @@ ul, ol { list-style: none; }
 }
 
 .award-year {
-  font-family: var(--font-display);
+  font-family: var(--font-body);
   font-size: 3rem;
   font-weight: 700;
   line-height: 1;
@@ -486,7 +485,7 @@ ul, ol { list-style: none; }
 }
 
 .award-body h3 {
-  font-family: var(--font-display);
+  font-family: var(--font-body);
   font-size: 1.2rem;
   line-height: 1.2;
   margin-bottom: 0.5rem;
@@ -541,7 +540,7 @@ ul, ol { list-style: none; }
 }
 
 .festival-title {
-  font-family: var(--font-display);
+  font-family: var(--font-body);
   font-size: clamp(3rem, 8vw, 6rem);
   line-height: 0.95;
   letter-spacing: -0.03em;
@@ -588,7 +587,7 @@ ul, ol { list-style: none; }
 }
 
 .skill-name {
-  font-family: var(--font-display);
+  font-family: var(--font-body);
   font-size: 1.2rem;
   margin: 0.6rem 0 0.4rem;
 }
@@ -619,7 +618,7 @@ ul, ol { list-style: none; }
 }
 
 .procedures h3 {
-  font-family: var(--font-display);
+  font-family: var(--font-body);
   font-size: 1.3rem;
   margin-bottom: 1rem;
 }
