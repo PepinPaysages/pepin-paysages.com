@@ -613,105 +613,142 @@ ul, ol { list-style: none; }
 }
 
 /* ============================================
-   Savoir-faire — Roadmap horizontal
+   Savoir-faire — Timeline verticale (Visme style)
    ============================================ */
-.skill-roadmap {
+.skill-vistimeline {
   position: relative;
   margin-bottom: 3rem;
-  padding: 2rem 0;
+  padding: 1rem 0;
 }
 
-.roadmap-track {
+.vt-track {
   position: absolute;
-  top: 3.2rem;
-  left: 0;
-  right: 0;
-  height: 2px;
+  left: 50%;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  transform: translateX(-50%);
+  background: var(--line);
   z-index: 0;
-  pointer-events: none;
 }
 
-.roadmap-track svg {
-  width: 100%;
-  height: 100%;
-}
-
-.roadmap-nodes {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 1rem;
+.vt-node {
   position: relative;
   z-index: 1;
-}
-
-.rm-node {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
+  align-items: flex-start;
+  margin-bottom: 2.5rem;
 }
 
-.rm-dot {
-  width: 48px;
-  height: 48px;
+.vt-node:last-child { margin-bottom: 0; }
+
+/* Alternating left/right */
+.vt-left {
+  flex-direction: row;
+  padding-right: calc(50% + 1.5rem);
+}
+
+.vt-right {
+  flex-direction: row-reverse;
+  padding-left: calc(50% + 1.5rem);
+}
+
+.vt-dot {
+  position: absolute;
+  left: 50%;
+  top: 1.2rem;
+  transform: translateX(-50%);
+  width: 44px;
+  height: 44px;
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
   background: var(--white);
-  border: 3px solid var(--dot-color);
-  margin-bottom: 1rem;
+  border: 3px solid var(--vt-clr);
+  z-index: 2;
   flex-shrink: 0;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.rm-node:hover .rm-dot {
-  transform: scale(1.12);
-  box-shadow: 0 0 0 6px color-mix(in srgb, var(--dot-color) 20%, transparent);
+.vt-node:hover .vt-dot {
+  transform: translateX(-50%) scale(1.15);
+  box-shadow: 0 0 0 8px color-mix(in srgb, var(--vt-clr) 18%, transparent);
 }
 
-.rm-dot span {
-  font-size: 0.85rem;
+.vt-dot span {
+  font-size: 0.82rem;
   font-weight: 800;
-  color: var(--dot-color);
+  color: var(--vt-clr);
 }
 
-.rm-card {
+.vt-card {
+  display: flex;
   background: var(--white);
   border: 1px solid var(--line);
   border-radius: var(--radius);
-  padding: 1.2rem 1rem;
-  text-align: center;
+  overflow: hidden;
   width: 100%;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.rm-node:hover .rm-card {
-  transform: translateY(-4px);
+.vt-node:hover .vt-card {
+  transform: translateY(-3px);
   box-shadow: var(--shadow);
 }
 
-.rm-name {
-  font-size: 0.95rem;
+.vt-fig {
+  width: 140px;
+  min-height: 120px;
+  flex-shrink: 0;
+  overflow: hidden;
+}
+
+.vt-fig img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.vt-node:hover .vt-fig img {
+  transform: scale(1.06);
+}
+
+.vt-body {
+  padding: 1rem 1.2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex: 1;
+}
+
+.vt-name {
+  font-size: 1rem;
   font-weight: 700;
-  margin-bottom: 0.4rem;
+  margin-bottom: 0.35rem;
   line-height: 1.2;
 }
 
-.rm-desc {
-  font-size: 0.84rem;
+.vt-desc {
+  font-size: 0.85rem;
   color: var(--text-soft);
   line-height: 1.5;
 }
 
-.rm-refs {
-  display: inline-block;
-  font-size: 0.74rem;
-  color: var(--mineral);
-  font-weight: 600;
+.vt-refs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.3rem 1rem;
   margin-top: 0.5rem;
   padding-top: 0.5rem;
   border-top: 1px solid var(--line);
+}
+
+.vt-refs span {
+  font-size: 0.75rem;
+  color: var(--mineral);
+  font-weight: 600;
 }
 
 /* Procedures */
@@ -900,8 +937,15 @@ ul, ol { list-style: none; }
    Media queries
    ============================================ */
 @media (max-width: 1100px) {
-  .roadmap-nodes {
-    grid-template-columns: repeat(2, 1fr);
+  .vt-left {
+    padding-right: calc(50% + 1rem);
+  }
+  .vt-right {
+    padding-left: calc(50% + 1rem);
+  }
+  .vt-fig {
+    width: 110px;
+    min-height: 100px;
   }
 }
 
@@ -973,15 +1017,38 @@ ul, ol { list-style: none; }
   .procedures ul {
     flex-direction: column;
   }
-
-  .skill-roadmap {
-    gap: 1rem;
-  }
 }
 
-@media (max-width: 600px) {
-  .roadmap-nodes {
-    grid-template-columns: 1fr;
+@media (max-width: 650px) {
+  .vt-left,
+  .vt-right {
+    padding: 0 0 0 2.5rem;
+    flex-direction: row;
+  }
+
+  .vt-track {
+    left: 1.25rem;
+    transform: none;
+  }
+
+  .vt-dot {
+    left: 1.25rem;
+    transform: translateX(-50%);
+    width: 36px;
+    height: 36px;
+  }
+
+  .vt-node:hover .vt-dot {
+    transform: translateX(-50%) scale(1.15);
+  }
+
+  .vt-card {
+    flex-direction: column;
+  }
+
+  .vt-fig {
+    width: 100%;
+    min-height: 140px;
   }
 }
 
