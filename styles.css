@@ -331,8 +331,6 @@ ul, ol { list-style: none; }
 .hero-shade {
   position: absolute;
   inset: 0;
-  background:
-    linear-gradient(0deg, rgba(0,0,0,0.35) 0%, transparent 30%);
 }
 
 .hero-body {
@@ -585,7 +583,6 @@ ul, ol { list-style: none; }
 .festival-shade {
   position: absolute;
   inset: 0;
-  background: linear-gradient(90deg, rgba(0,0,0,0.30) 0%, transparent 35%);
 }
 
 .festival-body {
@@ -1009,10 +1006,6 @@ ul, ol { list-style: none; }
 
   .festival-body {
     text-align: center;
-  }
-
-  .festival-shade {
-    background: linear-gradient(0deg, rgba(0,0,0,0.30) 0%, transparent 35%);
   }
 
   .procedures ul {
