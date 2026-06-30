@@ -1,400 +1,325 @@
 <!doctype html>
 <html lang="fr">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Pepin Paysages · Ingenierie paysagere institutionnelle</title>
-    <meta
-      name="description"
-      content="Pepin Paysages accompagne les collectivites pour concevoir des parcs et jardins publics resilients, autour de l'eau et des plantes mediterraneennes."
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Fraunces:opsz,wght,SOFT@9..144,300..800,100&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
-    <header class="nav" id="nav">
-      <div class="container nav-inner">
-        <a href="#top" class="nav-logo">Pepin <strong>Paysages</strong></a>
-        <button class="nav-btn" id="menuBtn" aria-label="Menu" aria-expanded="false">Menu</button>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pepin Paysages · Ingénierie paysagère publique</title>
+  <meta name="description" content="Pepin Paysages conçoit parcs, jardins publics et plans guides pour les collectivités méditerranéennes. 15 ans d'expérience, 42 territoires accompagnés, 1er prix Festival des Jardins 2023." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Fraunces:opsz,wght,SOFT@9..144,300..800,100&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<!-- Navigation -->
+<header class="nav" id="nav">
+  <div class="nav-inner">
+    <a href="#top" class="nav-logo">Pepin <em>Paysages</em></a>
+    <nav class="nav-links" id="navLinks">
+      <a href="#projets" class="nav-link">Projets</a>
+      <a href="#prix" class="nav-link">Prix & concours</a>
+      <a href="#expertises" class="nav-link">Expertises</a>
+      <a href="#contact" class="nav-link nav-cta">Contact</a>
+    </nav>
+    <button class="nav-toggle" id="menuBtn" aria-label="Menu" aria-expanded="false">
+      <span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main>
+
+<!-- Hero -->
+<section class="hero" id="top">
+  <figure class="hero-fig" aria-hidden="true">
+    <img src="assets/images/projects/canebiers.jpg" alt="" class="hero-bg" />
+    <div class="hero-shade"></div>
+  </figure>
+  <div class="hero-body">
+    <div class="hero-text">
+      <p class="hero-label">Ingénierie paysagère publique</p>
+      <h1 class="hero-title">Des parcs qui travaillent&nbsp;avec l'eau, pas contre elle.</h1>
+      <p class="hero-lead">Pepin Paysages conçoit et réalise des parcs, jardins publics et plans guides pour les collectivités méditerranéennes — de l'espace de proximité au&nbsp;grand territoire.</p>
+      <div class="hero-cta">
+        <a href="#projets" class="btn btn-primary">Voir les projets</a>
+        <a href="#contact" class="btn btn-outline">Nous écrire</a>
       </div>
-      <nav class="nav-panel" id="navPanel" aria-hidden="true">
-        <a href="#gouvernance">Mandat & Gouvernance</a>
-        <a href="#expertises">Expertises</a>
-        <a href="#methodologie">Méthodologie</a>
-        <a href="#references">Références</a>
-        <a href="#cadres">Cadres & distinctions</a>
-        <a href="#contact" class="cta-link">Contact</a>
-      </nav>
-    </header>
+    </div>
+    <ul class="hero-kpis">
+      <li class="kpi">
+        <span class="kpi-num" data-count="8.6" data-suffix="M€">0</span>
+        <span class="kpi-label">Budgets accompagnés</span>
+      </li>
+      <li class="kpi">
+        <span class="kpi-num" data-count="42" data-suffix="">0</span>
+        <span class="kpi-label">Collectivités suivies</span>
+      </li>
+      <li class="kpi">
+        <span class="kpi-num" data-count="15" data-suffix="">0</span>
+        <span class="kpi-label">Années d'interventions</span>
+      </li>
+    </ul>
+  </div>
+</section>
 
-    <main>
-      <section class="hero hero-mandat" id="top">
-        <div class="hero-media" aria-hidden="true">
-          <img src="assets/images/festival/festival-1.jpg" alt="Vue aérienne d'un parc méditerranéen" class="hero-bg" />
-          <div class="hero-overlay"></div>
-        </div>
-        <div class="container hero-shell">
-          <div class="hero-intro reveal">
-            <p class="label">Mandat public méditerranéen</p>
-            <h1>Ingénierie paysagère et hydrologique pour les maîtrises d'ouvrage publiques</h1>
-            <p class="lead">
-              Pepin Paysages coordonne concours, plans guides et marchés de travaux pour les collectivités, syndicats
-              d'eau et agences d'architecture. Lecture systémique sols / eau / usages, dossiers exploitables et suivi
-              opérationnel jusqu'à la réception.
-            </p>
-            <div class="hero-cta">
-              <a href="#references" class="btn btn-light">Consulter les références</a>
-              <a href="#contact" class="btn btn-outline">Coordonner une mission</a>
-            </div>
-          </div>
-          <div class="hero-kpis" aria-label="Indicateurs clés">
-            <article class="kpi-card reveal delay-100">
-              <p class="kpi-label">Budgets accompagnés</p>
-              <p class="kpi-value"><span data-count="8.6" data-suffix=" M€">0</span></p>
-              <small>Concours, marchés de conception-réalisation, plans verts.</small>
-            </article>
-            <article class="kpi-card reveal delay-150">
-              <p class="kpi-label">Collectivités suivies</p>
-              <p class="kpi-value"><span data-count="42" data-suffix=" territoires">0</span></p>
-              <small>Communes, métropoles, syndicats mixtes et opérateurs publics.</small>
-            </article>
-            <article class="kpi-card reveal delay-200">
-              <p class="kpi-label">Années d'interventions</p>
-              <p class="kpi-value"><span data-count="15" data-suffix=" ans">0</span></p>
-              <small>AMO, MOE complète, assistance chantier et exploitation.</small>
-            </article>
-          </div>
-          <aside class="hero-side reveal delay-250" aria-label="Navigation secondaire">
-            <nav class="section-menu" aria-label="Sections institutionnelles">
-              <a href="#gouvernance">Mandat & Gouvernance</a>
-              <a href="#expertises">Expertises coordonnées</a>
-              <a href="#methodologie">Méthodologie</a>
-              <a href="#references">Références prioritaires</a>
-              <a href="#cadres">Cadres & distinctions</a>
-              <a href="#contact">Contact & documents</a>
-            </nav>
-            <p class="hero-note">
-              S.A.S Pepin Paysages · Siret 827 888 975 00022 · Interventions RAMSAR, PAEN, ZNIEFF, ANRU et secteurs
-              sensibles littoraux.
-            </p>
-          </aside>
-        </div>
-      </section>
+<!-- Projets -->
+<section class="sec" id="projets">
+  <div class="sec-head">
+    <h2 class="sec-title">Projets réalisés</h2>
+    <p class="sec-desc">De la place de quartier au plan guide territorial. Chaque projet est&nbsp;suivi de la conception à la&nbsp;réception.</p>
+  </div>
 
-      <section class="section section-calcite" id="gouvernance">
-        <div class="container gouvernance-grid">
-          <div class="gouvernance-copy reveal">
-            <p class="label">Mandat & gouvernance</p>
-            <h2 class="title">Un partenaire opérationnel pour les directions de projet publiques</h2>
-            <p class="lead">
-              Nous cadrons les comités techniques, coordonnons les bureaux d'études et sécurisons les procédures (MOP,
-              CCAG, loi sur l'eau). Chaque phase produit des pièces exploitables : plans verts, PAEN, PLU, dossiers loi
-              sur l'eau et calendriers de chantier ajustés aux arbitrages politiques.
-            </p>
-          </div>
-          <div class="doc-carousel reveal delay-100">
-            <article class="doc-card" aria-label="Plan guide communal">
-              <h3>Plans guides communaux</h3>
-              <p>SCOT métropolitains, PCAET, diagnostics climat et budgets phasés 5/10/20 ans.</p>
-            </article>
-            <article class="doc-card" aria-label="Dossiers réglementaires">
-              <h3>Dossiers réglementaires</h3>
-              <p>Notes loi sur l'eau, avis RAMSAR, conventions PAEN et pièces PRO/DCE.</p>
-            </article>
-            <article class="doc-card" aria-label="Concertation">
-              <h3>Concertation & OPC</h3>
-              <p>Ateliers citoyens, OPC paysage, reporting élus/techniciens et médiation chantier.</p>
-            </article>
-          </div>
-          <aside class="procedure-panel reveal delay-150" aria-label="Procédures suivies">
-            <h3>Cadre institutionnel</h3>
-            <ul>
-              <li>Marchés publics MOP & conception-réalisation</li>
-              <li>CCAG Travaux & Prestations Intellectuelles</li>
-              <li>Suivi loi sur l'eau, Natura 2000, avis DDTM</li>
-              <li>Outils SIG, BIM et cloud sécurisé 1 To</li>
-            </ul>
-          </aside>
-        </div>
-      </section>
-
-      <section class="section section-white" id="expertises">
-        <div class="container">
-          <div class="section-head">
-            <p class="label">Disciplines coordonnées</p>
-            <h2 class="title">Hydrologie, végétal, usages et conformité</h2>
-            <p class="lead">Quatre blocs d'intervention qui se croisent sur chaque site sensible accompagné.</p>
-          </div>
-          <div class="expertise-grid">
-            <article class="expertise-card reveal" data-diagram="hydro">
-              <div class="icon-wrap" aria-hidden="true">
-                <span>01</span>
-              </div>
-              <h3>Hydrologie paysagère</h3>
-              <p>Dimensionnement des noues actives, bassins temporaires et continuités hydrauliques.</p>
-              <small>Dossiers loi sur l'eau · Modèles hydrauliques</small>
-            </article>
-            <article class="expertise-card reveal delay-100" data-diagram="vegetal">
-              <div class="icon-wrap" aria-hidden="true">
-                <span>02</span>
-              </div>
-              <h3>Palette méditerranéenne</h3>
-              <p>Sélection d'essences résilientes, fiches d'entretien et prescriptions gestionnaires.</p>
-              <small>Palettes labellisées · Fiches maintenance</small>
-            </article>
-            <article class="expertise-card reveal delay-150" data-diagram="amo">
-              <div class="icon-wrap" aria-hidden="true">
-                <span>03</span>
-              </div>
-              <h3>MOE / AMO publiques</h3>
-              <p>Mandat paysage, pilotage de groupements, assistance ACT/VISA/DET pour les élus.</p>
-              <small>Coordination BIM · Mandats partagés</small>
-            </article>
-            <article class="expertise-card reveal delay-200" data-diagram="resilience">
-              <div class="icon-wrap" aria-hidden="true">
-                <span>04</span>
-              </div>
-              <h3>Résilience & conformité</h3>
-              <p>Analyse risques climatiques, dispositifs anti-crues, conformité biodiversité et énergie.</p>
-              <small>ZNIEFF · RAMSAR · Plans climat</small>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      <section class="section section-calcite" id="methodologie">
-        <div class="container">
-          <div class="section-head">
-            <p class="label">Méthodologie</p>
-            <h2 class="title">Un déroulé calé sur les calendriers publics</h2>
-            <p class="lead">Chaque étape est bornée par des livrables numériques et physiques validés en comité technique.</p>
-          </div>
-          <ol class="timeline" aria-label="Étapes de la méthodologie">
-            <li class="timeline-item reveal">
-              <div class="timeline-index">01</div>
-              <div>
-                <h3>Cadrage & stratégie</h3>
-                <p>Lecture du programme, analyse hydrologique/sols, cartographie SIG et protocole de gouvernance.</p>
-              </div>
-            </li>
-            <li class="timeline-item reveal delay-100">
-              <div class="timeline-index">02</div>
-              <div>
-                <h3>Conception partagée</h3>
-                <p>Ateliers avec architectes et services, simulations eau/végétal, documents de référence (atlas, palettes, coûts).</p>
-              </div>
-            </li>
-            <li class="timeline-item reveal delay-150">
-              <div class="timeline-index">03</div>
-              <div>
-                <h3>Dossiers techniques</h3>
-                <p>Production des pièces PRO/DCE, notes de calcul hydraulique, estimations détaillées et phasage travaux.</p>
-              </div>
-            </li>
-            <li class="timeline-item reveal delay-200">
-              <div class="timeline-index">04</div>
-              <div>
-                <h3>Suivi & évaluation</h3>
-                <p>OPC paysage, visites de chantier, assistance aux réceptions et outils de suivi des engagements.</p>
-              </div>
-            </li>
-          </ol>
-        </div>
-      </section>
-
-      <section class="section section-white" id="references">
-        <div class="container">
-          <div class="section-head">
-            <p class="label">Références prioritaires</p>
-            <h2 class="title">Projets livrés et en cours</h2>
-            <p class="lead">Filtres rapides par type de mandat. Survol = coordonnées GPS pour contextualiser l'implantation.</p>
-          </div>
-          <div class="filters" role="toolbar" aria-label="Filtrer les références">
-            <button class="filter-btn is-active" data-filter="all">Toutes</button>
-            <button class="filter-btn" data-filter="moe">MOE</button>
-            <button class="filter-btn" data-filter="amo">AMO</button>
-            <button class="filter-btn" data-filter="concours">Concours</button>
-          </div>
-          <div class="project-grid">
-            <article class="project-card reveal" data-type="moe" data-gps="43.663N · 7.146E">
-              <img src="assets/images/projects/canebiers.jpg" alt="Parc des Canebiers à Cagnes-sur-Mer" loading="lazy" />
-              <div class="project-copy">
-                <p class="project-tag">MOE complète</p>
-                <h3>Parc des Canebiers</h3>
-                <p>2,7 ha renaturés en berge active, continuités écologiques et dispositif anti-crues.</p>
-                <ul class="project-meta">
-                  <li><strong>Rôle :</strong> mandataire paysage</li>
-                  <li><strong>Travaux :</strong> 3,4 M€</li>
-                </ul>
-              </div>
-            </article>
-            <article class="project-card reveal delay-100" data-type="moe" data-gps="43.319N · 5.367E">
-              <img src="assets/images/projects/business-garden.jpg" alt="Business Garden à Marseille" loading="lazy" />
-              <div class="project-copy">
-                <p class="project-tag">Campus tertiaire</p>
-                <h3>Business Garden</h3>
-                <p>Stratégie eau et végétation sur 29 ha Euroméditerranée, phase PRO/ACT en cours.</p>
-                <ul class="project-meta">
-                  <li><strong>Rôle :</strong> MOE paysage</li>
-                  <li><strong>Phase :</strong> PRO · ACT</li>
-                </ul>
-              </div>
-            </article>
-            <article class="project-card reveal delay-150" data-type="moe" data-gps="43.321N · 5.363E">
-              <img src="assets/images/projects/euromed.jpg" alt="Ilot Phare XXL à Euromed" loading="lazy" />
-              <div class="project-copy">
-                <p class="project-tag">Cœur d'îlot public</p>
-                <h3>Ilot Phare XXL</h3>
-                <p>Verger méditerranéen, gestion différenciée et plan lumière compatible faune.</p>
-                <ul class="project-meta">
-                  <li><strong>Rôle :</strong> paysage & éclairage</li>
-                  <li><strong>Livraison :</strong> 2025</li>
-                </ul>
-              </div>
-            </article>
-            <article class="project-card reveal delay-200" data-type="amo" data-gps="43.725N · 7.331E">
-              <img src="assets/images/projects/fontan-beaulieu.jpg" alt="Plan guide de Fontan et plan vert de Beaulieu" loading="lazy" />
-              <div class="project-copy">
-                <p class="project-tag">Planification territoriale</p>
-                <h3>Fontan & Beaulieu</h3>
-                <p>Plans verts 2050 : schéma directeur de l'eau, fiches techniques micro-centralités.</p>
-                <ul class="project-meta">
-                  <li><strong>Rôle :</strong> AMO paysage</li>
-                  <li><strong>Mission :</strong> Diagnostic + scénarios</li>
-                </ul>
-              </div>
-            </article>
-            <article class="project-card reveal" data-type="concours" data-gps="43.565N · 4.192E">
-              <img src="assets/images/festival/festival-2.jpg" alt="Installation aux Salins du Midi" loading="lazy" />
-              <div class="project-copy">
-                <p class="project-tag">Site classé</p>
-                <h3>Salins du Midi</h3>
-                <p>Reconfiguration des parcours visiteurs, respect RAMSAR et gestion des eaux saumâtres.</p>
-                <ul class="project-meta">
-                  <li><strong>Rôle :</strong> MOE paysage</li>
-                  <li><strong>Surface :</strong> 5 ha</li>
-                </ul>
-              </div>
-            </article>
-            <article class="project-card reveal delay-100" data-type="amo" data-gps="43.733N · 7.177E">
-              <img src="assets/images/festival/festival-3.jpg" alt="Réservoir de la Baronne" loading="lazy" />
-              <div class="project-copy">
-                <p class="project-tag">Infrastructure eau potable</p>
-                <h3>Réservoir de la Baronne</h3>
-                <p>Mission AMO pour la Métropole Nice Côte d'Azur, intégration paysagère d'un réservoir stratégique.</p>
-                <ul class="project-meta">
-                  <li><strong>Rôle :</strong> AMO paysage</li>
-                  <li><strong>Partenaires :</strong> hydrauliciens, architectes</li>
-                </ul>
-              </div>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      <section class="section section-calcite" id="cadres">
-        <div class="container">
-          <div class="section-head">
-            <p class="label">Cadres & distinctions</p>
-            <h2 class="title">Prix, procédures et qualifications</h2>
-          </div>
-          <div class="cadres-grid">
-            <div class="table-wrapper reveal">
-              <table class="awards-table">
-                <thead>
-                  <tr>
-                    <th>Année</th>
-                    <th>Procédure / Concours</th>
-                    <th>Résultat</th>
-                    <th>Budget</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td>2023</td>
-                    <td>Festival des Jardins de la Côte d'Azur</td>
-                    <td>1er prix pro · Jardin « Entre-là »</td>
-                    <td>120 k€</td>
-                  </tr>
-                  <tr>
-                    <td>2021</td>
-                    <td>Paysalia · Carré des Jardiniers</td>
-                    <td>Finaliste · 2e position « À TABLE ! »</td>
-                    <td>250 k€</td>
-                  </tr>
-                  <tr>
-                    <td>2020</td>
-                    <td>Concours international rives de la Morača</td>
-                    <td>Lauréat · Génie végétal & eau</td>
-                    <td>8 640 k€</td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-            <aside class="qualification-panel reveal delay-100">
-              <h3>Qualifications & engagements</h3>
-              <ul>
-                <li>OPQIBI Génie écologique et hydraulique</li>
-                <li>Conseil CAUE 06 & interventions pédagogiques</li>
-                <li>Sites RAMSAR, Natura 2000, ZNIEFF, secteurs ANRU</li>
-                <li>Démarche bas-carbone, matériaux sourcés localement</li>
-              </ul>
-            </aside>
-          </div>
-        </div>
-      </section>
-
-      <section class="section section-ink" id="contact">
-        <div class="container contact-grid">
-          <div class="contact-copy reveal">
-            <p class="label">Contact & documents</p>
-            <h2 class="title">Coordonnons vos prochaines opérations</h2>
-            <p class="lead">
-              Nous répondons aux directions de l'urbanisme, services espaces verts, agences d'architecture et groupements
-              de MOE sous 48h ouvrées. Joignez votre note de cadrage ou appel d'offres pour une revue structurée.
-            </p>
-            <ul class="contact-meta">
-              <li><strong>Téléphone :</strong> <a href="tel:+33625907706">06 25 90 77 06</a></li>
-              <li><strong>Email :</strong> <a href="mailto:contact@pepin-paysages.com">contact@pepin-paysages.com</a></li>
-              <li><strong>Adresse :</strong> 39 rue Estrabarry, 06620 Le Bar-sur-Loup</li>
-            </ul>
-            <div class="contact-actions">
-              <a href="#references" class="btn btn-light">Consulter les références</a>
-              <a href="assets/documents/note-de-presentation.pdf" class="btn btn-outline" download> Télécharger la note de présentation</a>
-            </div>
-            <p class="contact-note">RGPD : vos données servent uniquement à vous répondre et sont archivées sur un cloud sécurisé.</p>
-          </div>
-          <form class="contact-form reveal delay-100" id="contact-form" action="mailto:contact@pepin-paysages.com" method="post" enctype="text/plain">
-            <label>Nom / Structure <input type="text" name="nom" required /></label>
-            <label>Email professionnel <input type="email" name="email" required /></label>
-            <label>Type de maîtrise d'ouvrage
-              <select name="profil" required>
-                <option value="">Sélectionner</option>
-                <option>Collectivité / Mairie</option>
-                <option>Métropole / Syndicat</option>
-                <option>Aménageur public</option>
-                <option>Agence d'architecture / MOE</option>
-              </select>
-            </label>
-            <label>Objet de la mission <textarea name="message" rows="5" required></textarea></label>
-            <button type="submit" class="btn btn-dark">Envoyer la demande</button>
-          </form>
-        </div>
-      </section>
-    </main>
-
-    <footer class="footer">
-      <div class="container footer-inner">
-        <p>(c) <span id="year"></span> Pepin Paysages SAS - Siret 82788897500022</p>
-        <a href="#top">Retour en haut</a>
+  <div class="projects" id="projectsGrid">
+    <article class="project" data-type="moe">
+      <figure class="project-fig">
+        <img src="assets/images/projects/canebiers.jpg" alt="Parc des Canebiers, Cagnes-sur-Mer" loading="lazy" />
+      </figure>
+      <div class="project-body">
+        <span class="project-tag">MOE complète</span>
+        <h3 class="project-name">Parc des Canebiers</h3>
+        <p class="project-loc">Cagnes-sur-Mer · 2,7&nbsp;ha</p>
+        <p class="project-desc">Berges actives, continuités écologiques et dispositif anti-crues. Renaturation complète d'un&nbsp;parc&nbsp;public.</p>
+        <ul class="project-meta">
+          <li>Mandataire paysage</li>
+          <li>Travaux 3,4 M€</li>
+        </ul>
       </div>
-    </footer>
+    </article>
 
-    <script src="script.js"></script>
-  </body>
+    <article class="project" data-type="moe">
+      <figure class="project-fig">
+        <img src="assets/images/projects/business-garden.jpg" alt="Business Garden, Marseille" loading="lazy" />
+      </figure>
+      <div class="project-body">
+        <span class="project-tag">Campus tertiaire</span>
+        <h3 class="project-name">Business Garden</h3>
+        <p class="project-loc">Marseille · 29&nbsp;ha</p>
+        <p class="project-desc">Stratégie eau et végétation sur le périmètre Euroméditerranée. Phase PRO/ACT en&nbsp;cours.</p>
+        <ul class="project-meta">
+          <li>MOE paysage</li>
+          <li>PRO · ACT</li>
+        </ul>
+      </div>
+    </article>
+
+    <article class="project" data-type="moe">
+      <figure class="project-fig">
+        <img src="assets/images/projects/euromed.jpg" alt="Îlot Phare XXL, Euromed Marseille" loading="lazy" />
+      </figure>
+      <div class="project-body">
+        <span class="project-tag">Cœur d'îlot public</span>
+        <h3 class="project-name">Îlot Phare XXL</h3>
+        <p class="project-loc">Euromed Marseille</p>
+        <p class="project-desc">Verger méditerranéen, gestion différenciée, plan lumière compatible faune. Livré&nbsp;en&nbsp;2025.</p>
+        <ul class="project-meta">
+          <li>Paysage & éclairage</li>
+          <li>Livré 2025</li>
+        </ul>
+      </div>
+    </article>
+
+    <article class="project" data-type="amo">
+      <figure class="project-fig">
+        <img src="assets/images/projects/fontan-beaulieu.jpg" alt="Plans verts Fontan et Beaulieu-sur-Mer" loading="lazy" />
+      </figure>
+      <div class="project-body">
+        <span class="project-tag">Planification territoriale</span>
+        <h3 class="project-name">Fontan & Beaulieu</h3>
+        <p class="project-loc">Alpes-Maritimes</p>
+        <p class="project-desc">Plans verts 2050 — schéma directeur de l'eau, fiches techniques micro-centralités. Diagnostic +&nbsp;scénarios.</p>
+        <ul class="project-meta">
+          <li>AMO paysage</li>
+          <li>Diagnostic & scénarios</li>
+        </ul>
+      </div>
+    </article>
+
+    <article class="project" data-type="moe">
+      <figure class="project-fig">
+        <img src="assets/images/festival/festival-2.jpg" alt="Salins du Midi, Aigues-Mortes" loading="lazy" />
+      </figure>
+      <div class="project-body">
+        <span class="project-tag">Site classé RAMSAR</span>
+        <h3 class="project-name">Salins du Midi</h3>
+        <p class="project-loc">Aigues-Mortes · 5&nbsp;ha</p>
+        <p class="project-desc">Reconfiguration des parcours visiteurs sur un site sensible. Gestion des eaux saumâtres, respect RAMSAR.</p>
+        <ul class="project-meta">
+          <li>MOE paysage</li>
+          <li>Site classé</li>
+        </ul>
+      </div>
+    </article>
+
+    <article class="project" data-type="amo">
+      <figure class="project-fig">
+        <img src="assets/images/festival/festival-3.jpg" alt="Réservoir de la Baronne, La Gaude" loading="lazy" />
+      </figure>
+      <div class="project-body">
+        <span class="project-tag">Infrastructure eau potable</span>
+        <h3 class="project-name">Réservoir de la Baronne</h3>
+        <p class="project-loc">La Gaude</p>
+        <p class="project-desc">AMO paysage pour la Métropole Nice Côte d'Azur. Intégration paysagère d'un&nbsp;réservoir stratégique.</p>
+        <ul class="project-meta">
+          <li>AMO paysage</li>
+          <li>Métropole NCA</li>
+        </ul>
+      </div>
+    </article>
+  </div>
+</section>
+
+<!-- Prix & concours -->
+<section class="sec sec-dark" id="prix">
+  <div class="sec-head">
+    <h2 class="sec-title">Prix & concours</h2>
+    <p class="sec-desc">Des concepts qui marquent, des jurys qui&nbsp;valident.</p>
+  </div>
+
+  <ol class="awards">
+    <li class="award">
+      <time class="award-year">2023</time>
+      <div class="award-body">
+        <h3 class="award-name">Festival des Jardins de la Côte d'Azur</h3>
+        <p class="award-rank">1<sup>er</sup> prix professionnel</p>
+        <p class="award-desc">Jardin « Entre-là » — installation vivante croisant vannerie paysagère, plantes méditerranéennes et immersion sensible. Budget 120&nbsp;k€.</p>
+      </div>
+    </li>
+    <li class="award">
+      <time class="award-year">2021</time>
+      <div class="award-body">
+        <h3 class="award-name">Paysalia · Carré des Jardiniers</h3>
+        <p class="award-rank">Finaliste — 2<sup>e</sup> position</p>
+        <p class="award-desc">Concept « À TABLE ! » autour des usages collectifs, de l'alimentaire et de la biodiversité urbaine. Budget 250&nbsp;k€.</p>
+      </div>
+    </li>
+    <li class="award raward-highlight">
+      <time class="award-year">2020</time>
+      <div class="award-body">
+        <h3 class="award-name">Concours international rives de la Morača</h3>
+        <p class="award-rank">Lauréat · Podgorica, Monténégro</p>
+        <p class="award-desc">Scénario d'aménagement des berges fondé sur le génie végétal et la culture de l'eau éphémère. Budget 8&nbsp;640&nbsp;k€.</p>
+      </div>
+    </li>
+  </ol>
+</section>
+
+<!-- Festival highlight -->
+<section class="sec sec-festival" id="festival">
+  <figure class="festival-fig" aria-hidden="true">
+    <img src="assets/images/festival/festival-1.jpg" alt="" loading="lazy" />
+    <div class="festival-shade"></div>
+  </figure>
+  <div class="festival-body">
+    <p class="label label-gold">1<sup>er</sup> prix · Festival des Jardins 2023</p>
+    <h2 class="festival-title">« Entre-là »</h2>
+    <p class="festival-desc">Un jardin où le végétal tisse l'espace. Vanneries paysagères, essences méditerranéennes, immersion&nbsp;sensible.</p>
+    <a href="assets/images/festival/festival-plan.jpg" class="btn btn-outline" target="_blank">Voir le plan</a>
+  </div>
+</section>
+
+<!-- Expertises -->
+<section class="sec" id="expertises">
+  <div class="sec-head">
+    <h2 class="sec-title">Savoir-faire</h2>
+    <p class="sec-desc">Quatre disciplines qui se croisent sur chaque&nbsp;site.</p>
+  </div>
+
+  <div class="skills">
+    <article class="skill">
+      <span class="skill-num">01</span>
+      <h3 class="skill-name">Hydrologie paysagère</h3>
+      <p class="skill-desc">Dimensionnement des noues actives, bassins temporaires, continuités hydrauliques et&nbsp;dispositifs&nbsp;anti-crues.</p>
+      <p class="skill-ref">Parc des Canebiers · Business Garden</p>
+    </article>
+    <article class="skill">
+      <span class="skill-num">02</span>
+      <h3 class="skill-name">Palette méditerranéenne</h3>
+      <p class="skill-desc">Sélection d'essences résilientes, fiches d'entretien, prescriptions pour une&nbsp;gestion&nbsp;économe en&nbsp;eau.</p>
+      <p class="skill-ref">Îlot Phare XXL · Festival des Jardins 2023</p>
+    </article>
+    <article class="skill">
+      <span class="skill-num">03</span>
+      <h3 class="skill-name">MOE & AMO publiques</h3>
+      <p class="skill-desc">Conception, phasage, pilotage de groupements, assistance ACT/VISA/DET. Coordination BIM et&nbsp;mandats&nbsp;partagés.</p>
+      <p class="skill-ref">Salins du Midi · Fontan & Beaulieu</p>
+    </article>
+    <article class="skill">
+      <span class="skill-num">04</span>
+      <h3 class="skill-name">Résilience & conformité</h3>
+      <p class="skill-desc">Risques climatiques, inondation, incendie. Conformité Natura 2000, RAMSAR, ZNIEFF, loi sur&nbsp;l'eau.</p>
+      <p class="skill-ref">Réservoir de la Baronne · Salins du Midi</p>
+    </article>
+  </div>
+
+  <aside class="procedures">
+    <h3>Procédures maîtrisées</h3>
+    <ul>
+      <li>Marchés publics MOP & conception-réalisation</li>
+      <li>CCAG Travaux & Prestations Intellectuelles</li>
+      <li>Suivi loi sur l'eau, Natura 2000, avis DDTM</li>
+      <li>Outils SIG, BIM et cloud sécurisé</li>
+      <li>OPQIBI Génie écologique et hydraulique</li>
+    </ul>
+  </aside>
+</section>
+
+<!-- Contact -->
+<section class="sec sec-dark" id="contact">
+  <div class="contact-grid">
+    <div class="contact-info">
+      <p class="label">Contact</p>
+      <h2 class="sec-title">Coordonnons vos prochaines opérations</h2>
+      <p class="sec-desc">Nous répondons aux directions de l'urbanisme, services espaces verts et groupements de MOE sous 48h ouvrées.</p>
+      <address class="contact-details">
+        <a href="tel:+33625907706">06 25 90 77 06</a>
+        <a href="mailto:contact@pepin-paysages.com">contact@pepin-paysages.com</a>
+        <span>39 rue Estrabarry, 06620 Le Bar-sur-Loup</span>
+      </address>
+      <div class="contact-actions">
+        <a href="assets/documents/note-de-presentation.pdf" class="btn btn-primary" download>Télécharger la note</a>
+      </div>
+      <p class="contact-rgpd">RGPD : vos données servent uniquement à vous répondre. Archivées sur cloud sécurisé.</p>
+    </div>
+    <form class="contact-form" id="contactForm" action="mailto:contact@pepin-paysages.com" method="post" enctype="text/plain">
+      <label>
+        Nom / Structure
+        <input type="text" name="nom" required />
+      </label>
+      <label>
+        Email professionnel
+        <input type="email" name="email" required />
+      </label>
+      <label>
+        Type de maîtrise d'ouvrage
+        <select name="profil" required>
+          <option value="">Sélectionner</option>
+          <option>Collectivité / Mairie</option>
+          <option>Métropole / Syndicat</option>
+          <option>Aménageur public</option>
+          <option>Agence d'architecture / MOE</option>
+        </select>
+      </label>
+      <label>
+        Objet de la mission
+        <textarea name="message" rows="4" required></textarea>
+      </label>
+      <button type="submit" class="btn btn-primary">Envoyer la demande</button>
+    </form>
+  </div>
+</section>
+
+</main>
+
+<footer class="footer">
+  <div class="footer-inner">
+    <p>&copy; <span id="year"></span> Pepin Paysages SAS — Siret 827&nbsp;888&nbsp;975&nbsp;00022</p>
+    <nav class="footer-links">
+      <a href="#top">Haut de page</a>
+    </nav>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
 </html>
