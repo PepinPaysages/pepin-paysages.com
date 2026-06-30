@@ -613,191 +613,88 @@ ul, ol { list-style: none; }
 }
 
 /* ============================================
-   Savoir-faire — Visual grid
+   Savoir-faire — Card grid
    ============================================ */
-.skills-visual {
+.skills-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 2rem;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.2rem;
   margin-bottom: 3rem;
-  align-items: start;
 }
 
-/* SVG diagram */
-.skills-canvas {
+.skill-card {
+  background: var(--white);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-lg);
+  padding: 1.8rem 1.4rem 1.4rem;
   position: relative;
-  aspect-ratio: 1 / 1;
-  max-width: 480px;
-  width: 100%;
-  margin: 0 auto;
-}
-
-.skill-lines {
-  position: absolute;
-  inset: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 0;
-  pointer-events: none;
-}
-
-.skill-lines line {
-  stroke: var(--line);
-  stroke-width: 1.5;
-  stroke-dasharray: 6 4;
-}
-
-.skill-lines .skill-line-h {
-  stroke: var(--sand-pale);
-  stroke-dasharray: 4 6;
-}
-
-.skill-center {
-  fill: var(--mineral-pale);
-  stroke: var(--mineral);
-  stroke-width: 1.5;
-  stroke-dasharray: 3 3;
-}
-
-.skill-center-text {
-  fill: var(--mineral);
-  font-size: 14px;
-  font-weight: 700;
-  font-family: var(--font-body);
-  line-height: 1.3;
-  pointer-events: none;
-}
-
-.skill-node {
-  position: absolute;
-  z-index: 1;
-  width: 42%;
-  background: var(--white);
-  border: 1px solid var(--line);
-  border-radius: var(--radius);
-  padding: 1.2rem 1rem;
-  display: flex;
-  flex-direction: column;
-  gap: 0.4rem;
-  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
-  cursor: default;
-}
-
-.skill-node:hover {
-  transform: translateY(-3px) scale(1.02);
-  box-shadow: var(--shadow);
-  border-color: var(--sand);
-}
-
-.skill-node-1 {
-  top: 2%;
-  left: 50%;
-  transform: translateX(-50%);
-}
-
-.skill-node-1:hover {
-  transform: translateX(-50%) translateY(-3px) scale(1.02);
-}
-
-.skill-node-2 {
-  top: 30%;
-  right: 0;
-}
-
-.skill-node-3 {
-  bottom: 30%;
-  left: 0;
-}
-
-.skill-node-4 {
-  bottom: 2%;
-  left: 50%;
-  transform: translateX(-50%);
-}
-
-.skill-node-4:hover {
-  transform: translateX(-50%) translateY(-3px) scale(1.02);
-}
-
-.skill-icon {
-  font-size: 1.3rem;
-  line-height: 1;
-  color: var(--mineral);
-}
-
-.skill-node-body h3 {
-  font-size: 0.95rem;
-  font-weight: 700;
-  margin-bottom: 0.25rem;
-  line-height: 1.2;
-}
-
-.skill-node-body p {
-  font-size: 0.82rem;
-  color: var(--text-soft);
-  line-height: 1.45;
-}
-
-.skill-proj {
-  display: inline-block;
-  font-size: 0.72rem;
-  color: var(--mineral);
-  font-weight: 600;
-  margin-top: 0.3rem;
-  padding-top: 0.3rem;
-  border-top: 1px solid var(--line);
-}
-
-/* Strip cards (mobile fallback) */
-.skills-strip {
-  display: none;
-  flex-direction: column;
-  gap: 1rem;
-}
-
-.strip-card {
-  display: flex;
-  gap: 1rem;
-  align-items: flex-start;
-  padding: 1.2rem;
-  border-radius: var(--radius);
-  border: 1px solid var(--line);
-  background: var(--white);
+  overflow: hidden;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.strip-card:hover {
-  transform: translateX(4px);
-  box-shadow: var(--shadow);
+.skill-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-lg);
 }
 
-.strip-num {
-  font-size: 0.78rem;
-  font-weight: 700;
-  letter-spacing: 0.2em;
+.skill-accent {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  border-radius: var(--radius-lg) var(--radius-lg) 0 0;
+}
+
+.skill-hydro .skill-accent { background: var(--mineral); }
+.skill-vegetal .skill-accent { background: var(--sand); }
+.skill-moe .skill-accent { background: var(--ink); }
+.skill-resilience .skill-accent { background: var(--ink-light); }
+
+.skill-num {
+  display: block;
+  font-size: 2.4rem;
+  font-weight: 800;
+  line-height: 1;
   color: var(--text-light);
-  flex-shrink: 0;
-  margin-top: 0.2rem;
+  opacity: 0.25;
+  margin-bottom: 0.6rem;
 }
 
-.strip-body h3 {
-  font-size: 1rem;
+.skill-name {
+  font-size: 1.05rem;
   font-weight: 700;
-  margin-bottom: 0.3rem;
+  margin-bottom: 0.5rem;
+  line-height: 1.2;
 }
 
-.strip-body p {
+.skill-desc {
   font-size: 0.88rem;
   color: var(--text-soft);
-  line-height: 1.45;
+  line-height: 1.5;
+  margin-bottom: 0.8rem;
 }
 
-.strip-proj {
-  display: inline-block;
-  font-size: 0.75rem;
+.skill-projects {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.3rem 0.8rem;
+  padding-top: 0.6rem;
+  border-top: 1px solid var(--line);
+}
+
+.skill-projects li {
+  font-size: 0.78rem;
   color: var(--mineral);
   font-weight: 600;
-  margin-top: 0.4rem;
+  position: relative;
+}
+
+.skill-projects li + li::before {
+  content: '·';
+  margin-right: 0.5rem;
+  color: var(--text-light);
 }
 
 /* Procedures */
@@ -985,17 +882,9 @@ ul, ol { list-style: none; }
 /* ============================================
    Media queries
    ============================================ */
-@media (max-width: 1024px) {
-  .skills-visual {
-    grid-template-columns: 1fr;
-  }
-
-  .skills-canvas {
-    display: none;
-  }
-
-  .skills-strip {
-    display: flex;
+@media (max-width: 1100px) {
+  .skills-grid {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
@@ -1068,8 +957,14 @@ ul, ol { list-style: none; }
     flex-direction: column;
   }
 
-  .skills-visual {
+  .skills-grid {
     gap: 1rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .skills-grid {
+    grid-template-columns: 1fr;
   }
 }
 

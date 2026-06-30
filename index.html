@@ -230,88 +230,47 @@
     <p class="sec-desc">Quatre disciplines qui se croisent sur chaque&nbsp;site.</p>
   </div>
 
-  <div class="skills-visual">
-    <div class="skills-canvas" id="skillsCanvas">
-      <div class="skill-node skill-node-1" data-skill="hydro">
-        <span class="skill-icon">⏙</span>
-        <div class="skill-node-body">
-          <h3>Hydrologie paysagère</h3>
-          <p>Noues actives, bassins temporaires, continuités hydrauliques et dispositifs anti-crues.</p>
-          <span class="skill-proj">Canebiers · Business Garden</span>
-        </div>
-      </div>
-      <div class="skill-node skill-node-2" data-skill="vegetal">
-        <span class="skill-icon">✦</span>
-        <div class="skill-node-body">
-          <h3>Palette méditerranéenne</h3>
-          <p>Essences résilientes, fiches d'entretien, prescriptions pour une gestion économe en eau.</p>
-          <span class="skill-proj">Îlot Phare · Festival 2023</span>
-        </div>
-      </div>
-      <div class="skill-node skill-node-3" data-skill="moe">
-        <span class="skill-icon">⌗</span>
-        <div class="skill-node-body">
-          <h3>MOE & AMO publiques</h3>
-          <p>Conception, phasage, pilotage de groupements, assistance ACT/VISA/DET, coordination BIM.</p>
-          <span class="skill-proj">Salins du Midi · Fontan</span>
-        </div>
-      </div>
-      <div class="skill-node skill-node-4" data-skill="resilience">
-        <span class="skill-icon">⎔</span>
-        <div class="skill-node-body">
-          <h3>Résilience & conformité</h3>
-          <p>Risques climatiques, inondation, incendie. Conformité Natura 2000, RAMSAR, loi sur l'eau.</p>
-          <span class="skill-proj">Baronne · Salins du Midi</span>
-        </div>
-      </div>
-      <!-- Connection lines -->
-      <svg class="skill-lines" viewBox="0 0 500 500" aria-hidden="true">
-        <line x1="250" y1="40" x2="420" y2="170" />
-        <line x1="250" y1="40" x2="80" y2="170" />
-        <line x1="420" y1="170" x2="420" y2="330" />
-        <line x1="80" y1="170" x2="80" y2="330" />
-        <line x1="420" y1="330" x2="250" y2="460" />
-        <line x1="80" y1="330" x2="250" y2="460" />
-        <line x1="420" y1="170" x2="80" y2="170" class="skill-line-h" />
-        <circle cx="250" cy="250" r="60" class="skill-center" />
-        <text x="250" y="256" text-anchor="middle" class="skill-center-text">4<br/>savoir-<br/>faire</text>
-      </svg>
-    </div>
-
-    <div class="skills-strip" id="skillsStrip">
-      <div class="strip-card strip-1" data-strip="hydro">
-        <span class="strip-num">01</span>
-        <div class="strip-body">
-          <h3>Hydrologie paysagère</h3>
-          <p>Dimensionnement des noues actives, bassins temporaires et continuités hydrauliques.</p>
-          <span class="strip-proj">Parc des Canebiers · Business Garden</span>
-        </div>
-      </div>
-      <div class="strip-card strip-2" data-strip="vegetal">
-        <span class="strip-num">02</span>
-        <div class="strip-body">
-          <h3>Palette méditerranéenne</h3>
-          <p>Sélection d'essences résilientes, fiches d'entretien et prescriptions gestionnaires.</p>
-          <span class="strip-proj">Îlot Phare XXL · Festival des Jardins 2023</span>
-        </div>
-      </div>
-      <div class="strip-card strip-3" data-strip="moe">
-        <span class="strip-num">03</span>
-        <div class="strip-body">
-          <h3>MOE & AMO publiques</h3>
-          <p>Conception, phasage, pilotage de groupements, assistance ACT/VISA/DET pour les élus.</p>
-          <span class="strip-proj">Salins du Midi · Fontan & Beaulieu</span>
-        </div>
-      </div>
-      <div class="strip-card strip-4" data-strip="resilience">
-        <span class="strip-num">04</span>
-        <div class="strip-body">
-          <h3>Résilience & conformité</h3>
-          <p>Analyse risques climatiques, conformité biodiversité, dispositifs anti-crues.</p>
-          <span class="strip-proj">Réservoir de la Baronne · Salins du Midi</span>
-        </div>
-      </div>
-    </div>
+  <div class="skills-grid" id="skillsGrid">
+    <article class="skill-card skill-hydro">
+      <div class="skill-accent"></div>
+      <span class="skill-num">01</span>
+      <h3 class="skill-name">Hydrologie paysagère</h3>
+      <p class="skill-desc">Dimensionnement des noues actives, bassins temporaires, continuités hydrauliques et dispositifs anti-crues.</p>
+      <ul class="skill-projects">
+        <li>Parc des Canebiers</li>
+        <li>Business Garden</li>
+      </ul>
+    </article>
+    <article class="skill-card skill-vegetal">
+      <div class="skill-accent"></div>
+      <span class="skill-num">02</span>
+      <h3 class="skill-name">Palette méditerranéenne</h3>
+      <p class="skill-desc">Sélection d'essences résilientes, fiches d'entretien, prescriptions pour une gestion économe en eau.</p>
+      <ul class="skill-projects">
+        <li>Îlot Phare XXL</li>
+        <li>Festival des Jardins 2023</li>
+      </ul>
+    </article>
+    <article class="skill-card skill-moe">
+      <div class="skill-accent"></div>
+      <span class="skill-num">03</span>
+      <h3 class="skill-name">MOE & AMO publiques</h3>
+      <p class="skill-desc">Conception, phasage, pilotage de groupements, assistance ACT/VISA/DET, coordination BIM.</p>
+      <ul class="skill-projects">
+        <li>Salins du Midi</li>
+        <li>Fontan & Beaulieu</li>
+      </ul>
+    </article>
+    <article class="skill-card skill-resilience">
+      <div class="skill-accent"></div>
+      <span class="skill-num">04</span>
+      <h3 class="skill-name">Résilience & conformité</h3>
+      <p class="skill-desc">Analyse risques climatiques, inondation, incendie. Conformité Natura 2000, RAMSAR, loi sur l'eau.</p>
+      <ul class="skill-projects">
+        <li>Réservoir de la Baronne</li>
+        <li>Salins du Midi</li>
+      </ul>
+    </article>
   </div>
 
   <aside class="procedures">
