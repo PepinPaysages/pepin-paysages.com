@@ -3,22 +3,22 @@
    ============================================ */
 
 :root {
-  --ink: #0f2535;
-  --ink-soft: #1a2f3f;
-  --ink-light: #2a4050;
-  --mineral: #2d5a55;
-  --mineral-light: #3d7a72;
-  --mineral-pale: rgba(45,90,85,0.08);
+  --ink: #1d3016;
+  --ink-soft: #283d1e;
+  --ink-light: #3a522c;
+  --mineral: #375618;
+  --mineral-light: #4a6e22;
+  --mineral-pale: rgba(55,86,24,0.08);
   --sand: #c49b63;
   --sand-light: #d4b37f;
   --sand-pale: rgba(196,155,99,0.12);
   --calcite: #f4f1ea;
   --calcite-dark: #e8e3d8;
   --white: #ffffff;
-  --text: #142330;
-  --text-soft: #5a6a76;
-  --text-light: #8a9aa6;
-  --line: rgba(15, 37, 53, 0.10);
+  --text: #1a2810;
+  --text-soft: #4d5a42;
+  --text-light: #7a8a6e;
+  --line: rgba(29, 48, 22, 0.10);
   --line-light: rgba(255,255,255,0.10);
   --shadow: 0 8px 32px rgba(3,8,15,0.08);
   --shadow-lg: 0 24px 56px rgba(3,8,15,0.14);
@@ -186,7 +186,7 @@ ul, ol { list-style: none; }
   position: fixed;
   top: 0; left: 0; right: 0;
   z-index: 100;
-  background: rgba(15,37,53,0.92);
+  background: rgba(29,48,22,0.92);
   backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(8px);
   color: var(--calcite);
@@ -331,7 +331,7 @@ ul, ol { list-style: none; }
   position: absolute;
   inset: 0;
   background:
-    linear-gradient(0deg, rgba(15,37,53,0.92) 0%, rgba(15,37,53,0.25) 45%, rgba(15,37,53,0.05) 100%);
+    linear-gradient(0deg, rgba(29,48,22,0.92) 0%, rgba(29,48,22,0.25) 45%, rgba(29,48,22,0.05) 100%);
 }
 
 .hero-body {
@@ -436,7 +436,7 @@ ul, ol { list-style: none; }
   content: '';
   position: absolute;
   inset: 0;
-  background: linear-gradient(0deg, rgba(15,37,53,0.05) 0%, transparent 40%);
+  background: linear-gradient(0deg, rgba(29,48,22,0.05) 0%, transparent 40%);
   pointer-events: none;
 }
 
@@ -584,7 +584,7 @@ ul, ol { list-style: none; }
 .festival-shade {
   position: absolute;
   inset: 0;
-  background: linear-gradient(90deg, rgba(15,37,53,0.88) 0%, rgba(15,37,53,0.15) 65%, transparent 100%);
+  background: linear-gradient(90deg, rgba(29,48,22,0.88) 0%, rgba(29,48,22,0.15) 65%, transparent 100%);
 }
 
 .festival-body {
@@ -1018,7 +1018,7 @@ ul, ol { list-style: none; }
   .nav-links {
     position: fixed;
     inset: 0;
-    background: rgba(8,15,22,0.96);
+    background: rgba(20,32,14,0.96);
     backdrop-filter: blur(8px);
     flex-direction: column;
     justify-content: center;
@@ -1061,7 +1061,7 @@ ul, ol { list-style: none; }
   }
 
   .festival-shade {
-    background: linear-gradient(0deg, rgba(15,37,53,0.9) 0%, rgba(15,37,53,0.25) 100%);
+    background: linear-gradient(0deg, rgba(29,48,22,0.9) 0%, rgba(29,48,22,0.25) 100%);
   }
 
   .procedures ul {
