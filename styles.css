@@ -3,22 +3,23 @@
    ============================================ */
 
 :root {
-  --ink: #1d3016;
-  --ink-soft: #283d1e;
-  --ink-light: #3a522c;
-  --mineral: #375618;
-  --mineral-light: #4a6e22;
-  --mineral-pale: rgba(55,86,24,0.08);
+  --ink: #1e3a1a;
+  --ink-soft: #2a4a22;
+  --ink-light: #3d602e;
+  --mineral: #3d7a30;
+  --mineral-light: #4e9138;
+  --mineral-pale: rgba(61,122,48,0.08);
   --sand: #c49b63;
-  --sand-light: #d4b37f;
+  --sand-light: #d6ad78;
   --sand-pale: rgba(196,155,99,0.12);
+  --ember: #c97d4a;
   --calcite: #f4f1ea;
   --calcite-dark: #e8e3d8;
   --white: #ffffff;
   --text: #1a2810;
   --text-soft: #4d5a42;
   --text-light: #7a8a6e;
-  --line: rgba(29, 48, 22, 0.10);
+  --line: rgba(30, 58, 26, 0.10);
   --line-light: rgba(255,255,255,0.10);
   --shadow: 0 8px 32px rgba(3,8,15,0.08);
   --shadow-lg: 0 24px 56px rgba(3,8,15,0.14);
@@ -186,7 +187,7 @@ ul, ol { list-style: none; }
   position: fixed;
   top: 0; left: 0; right: 0;
   z-index: 100;
-  background: rgba(29,48,22,0.92);
+  background: rgba(30,58,26,0.88);
   backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(8px);
   color: var(--calcite);
@@ -312,7 +313,7 @@ ul, ol { list-style: none; }
   width: 100%;
   height: 100%;
   object-fit: cover;
-  filter: saturate(0.85) contrast(1.05) brightness(0.45);
+  filter: saturate(1.15) contrast(1.02) brightness(0.55);
   animation: hero-zoom 10s ease-out forwards;
 }
 
@@ -331,7 +332,7 @@ ul, ol { list-style: none; }
   position: absolute;
   inset: 0;
   background:
-    linear-gradient(0deg, rgba(29,48,22,0.92) 0%, rgba(29,48,22,0.25) 45%, rgba(29,48,22,0.05) 100%);
+    linear-gradient(0deg, rgba(30,58,26,0.78) 0%, rgba(30,58,26,0.15) 45%, rgba(30,58,26,0.02) 100%);
 }
 
 .hero-body {
@@ -436,7 +437,7 @@ ul, ol { list-style: none; }
   content: '';
   position: absolute;
   inset: 0;
-  background: linear-gradient(0deg, rgba(29,48,22,0.05) 0%, transparent 40%);
+  background: linear-gradient(0deg, rgba(30,58,26,0.04) 0%, transparent 40%);
   pointer-events: none;
 }
 
@@ -578,13 +579,13 @@ ul, ol { list-style: none; }
   width: 100%;
   height: 100%;
   object-fit: cover;
-  filter: saturate(0.9) contrast(1.03) brightness(0.4);
+  filter: saturate(1.1) contrast(1.02) brightness(0.5);
 }
 
 .festival-shade {
   position: absolute;
   inset: 0;
-  background: linear-gradient(90deg, rgba(29,48,22,0.88) 0%, rgba(29,48,22,0.15) 65%, transparent 100%);
+  background: linear-gradient(90deg, rgba(30,58,26,0.78) 0%, rgba(30,58,26,0.10) 60%, transparent 100%);
 }
 
 .festival-body {
@@ -1011,7 +1012,7 @@ ul, ol { list-style: none; }
   }
 
   .festival-shade {
-    background: linear-gradient(0deg, rgba(29,48,22,0.9) 0%, rgba(29,48,22,0.25) 100%);
+    background: linear-gradient(0deg, rgba(30,58,26,0.78) 0%, rgba(30,58,26,0.15) 100%);
   }
 
   .procedures ul {
